@@ -1,0 +1,193 @@
+/* Fonte google fonts */ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+ /*Definindo variaveis de cor*/
+ :root{
+     --vermelho: red;
+     --preta: black;
+ }
+ 
+ /*Reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Poppins', sans-serif;;
+    color: white;
+}
+
+/* Início Header */
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/* Jogo principal */
+
+.jogo-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url(../img/capa-witcher3.jpeg);
+    height: 430px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+}
+
+.jogo-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.jogo-principal .titulo{
+    margin-top: 8%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .4s ease all;
+    border-radius: 7px;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.jogo-principal .container{
+    width: 60%;
+}
+
+.box-jogo{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.box-jogo:hover{
+    border: solid 2px red;
+}
+
+.titulo-acao{
+    font-size: 25px;
+    margin-left: 55px;
+    margin-bottom: 10px;
+}
+
+.carrosel-jogos{
+    margin-top: 15px;
+}
+
+.carrosel-jogos a{
+    text-decoration: none;
+    color: #AAA;
+}
+
+.carrosel-jogos a:hover{
+    color: #fff;
+}
+
+.item-video{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+footer .conteudo-final{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone {
+    width: 490px;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.icone i{
+    color: red;
+    font-size: 50px;
+}
+
+.icone i:hover{
+    color: rgba(255, 255, 255, 0.788);
+}
+
+.descricao-final{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.link-referencia{
+    text-decoration: none;
+    color: #AAA;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.link-referencia:hover{
+    color: #FFF;
+    border-bottom: 1px solid #AAA;
+}
+
